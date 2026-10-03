@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ទំនាក់ទំនង | Khmer Stationery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <span><i class="fas fa-phone"></i> 012 345 678</span>
+            <span><i class="fas fa-envelope"></i> info@stationery.com</span>
+            <span class="top-right"><i class="fas fa-truck"></i> ដឹកជញ្ជូនឥតគិតថ្លៃ ចាប់ពី $20</span>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <i class="fas fa-book-open"></i>
+                <span>Khmer<strong>Stationery</strong></span>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html">ទំព័រដើម</a>
+                <a href="products.html">ផលិតផល</a>
+                <a href="about.html">អំពីយើង</a>
+                <a href="contact.html" class="active">ទំនាក់ទំនង</a>
+            </nav>
+            <div class="header-actions">
+                <button class="icon-btn cart-btn" id="cartBtn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>ទំនាក់ទំនង</h1>
+            <p><a href="index.html">ទំព័រដើម</a> / ទំនាក់ទំនង</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container contact-layout">
+
+            <div class="contact-info">
+                <h2>មកទាក់ទងយើង</h2>
+                <p>មានសំណួរ? យើងរីករាយក្នុងការជួយអ្នក។</p>
+
+                <div class="info-item">
+                    <i class="fas fa-location-dot"></i>
+                    <div>
+                        <strong>អាសយដ្ឋាន</strong>
+                        <p>#123 ផ្លូវមុនីវង្ស, សង្កាត់ចតុមុខ, ខណ្ឌដូនពេញ, ភ្នំពេញ</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong>ទូរស័ព្ទ</strong>
+                        <p>012 345 678 / 098 765 432</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>អ៊ីមែល</strong>
+                        <p>info@stationery.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong>ម៉ោងបើក</strong>
+                        <p>ចន្ទ - សៅរ៍: 8:00 - 20:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <h2>ផ្ញើសារមកយើង</h2>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>ឈ្មោះ *</label>
+                        <input type="text" id="cName" placeholder="ឈ្មោះរបស់អ្នក" required>
+                    </div>
+                    <div class="form-group">
+                        <label>អ៊ីមែល *</label>
+                        <input type="email" id="cEmail" placeholder="email@example.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>ប្រធានបទ</label>
+                    <input type="text" id="cSubject" placeholder="ចង់និយាយអំពីអ្វី?">
+                </div>
+
+                <div class="form-group">
+                    <label>សារ *</label>
+                    <textarea id="cMessage" rows="6" placeholder="សរសេរសាររបស់អ្នក..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fas fa-paper-plane"></i> ផ្ញើសារ
+                </button>
+                <p id="formMessage" class="form-message"></p>
+            </form>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3><i class="fas fa-book-open"></i> KhmerStationery</h3>
+                <p>ហាងលក់គ្រឿងសម្ភារៈសិក្សាឈានមុខគេនៅកម្ពុជា</p>
+            </div>
+            <div>
+                <h4>តំណភ្ជាប់</h4>
+                <a href="index.html">ទំព័រដើម</a>
+                <a href="products.html">ផលិតផល</a>
+                <a href="about.html">អំពីយើង</a>
+                <a href="contact.html">ទំនាក់ទំនង</a>
+            </div>
+            <div>
+                <h4>ជំនួយ</h4>
+                <a href="#">របៀបទិញ</a>
+                <a href="#">ការដឹកជញ្ជូន</a>
+                <a href="#">សំណួរញឹកញាប់</a>
+            </div>
+            <div>
+                <h4>ទំនាក់ទំនង</h4>
+                <p><i class="fas fa-phone"></i> 012 345 678</p>
+                <p><i class="fas fa-envelope"></i> info@stationery.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 KhmerStationery. រក្សាសិទ្ធិទាំងអស់។</p>
+        </div>
+    </footer>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> កន្ត្រក</h3>
+            <button id="closeCart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="cart-empty">កន្ត្រករបស់អ្នកទទេ</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>សរុប៖</span>
+                <strong id="cartTotal">$0.00</strong>
+            </div>
+            <button class="btn btn-primary btn-block">បង់ប្រាក់</button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

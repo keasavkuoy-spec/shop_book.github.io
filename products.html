@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ផលិតផល | Khmer Stationery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <span><i class="fas fa-phone"></i> 012 345 678</span>
+            <span><i class="fas fa-envelope"></i> info@stationery.com</span>
+            <span class="top-right"><i class="fas fa-truck"></i> ដឹកជញ្ជូនឥតគិតថ្លៃ ចាប់ពី $20</span>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <i class="fas fa-book-open"></i>
+                <span>Khmer<strong>Stationery</strong></span>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html">ទំព័រដើម</a>
+                <a href="products.html" class="active">ផលិតផល</a>
+                <a href="about.html">អំពីយើង</a>
+                <a href="contact.html">ទំនាក់ទំនង</a>
+            </nav>
+            <div class="header-actions">
+                <button class="icon-btn cart-btn" id="cartBtn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== PAGE BANNER ===== -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>ផលិតផលទាំងអស់</h1>
+            <p><a href="index.html">ទំព័រដើម</a> / ផលិតផល</p>
+        </div>
+    </section>
+
+    <!-- ===== PRODUCTS SECTION ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="products-layout">
+
+                <!-- Sidebar Filter -->
+                <aside class="sidebar">
+                    <h3>ប្រភេទ</h3>
+                    <ul class="filter-list" id="categoryFilter">
+                        <li class="active" data-cat="all">ទាំងអស់</li>
+                        <li data-cat="pen">ប៊ិច & ខ្មៅដៃ</li>
+                        <li data-cat="book">សៀវភៅ</li>
+                        <li data-cat="bag">កាបូប</li>
+                        <li data-cat="tool">ឧបករណ៍</li>
+                    </ul>
+
+                    <h3>តម្លៃ</h3>
+                    <ul class="filter-list" id="priceFilter">
+                        <li class="active" data-price="all">ទាំងអស់</li>
+                        <li data-price="low">ក្រោម $5</li>
+                        <li data-price="mid">$5 - $15</li>
+                        <li data-price="high">លើស $15</li>
+                    </ul>
+                </aside>
+
+                <!-- Products Grid -->
+                <div class="products-area">
+                    <div class="products-toolbar">
+                        <p>បង្ហាញ <strong id="productCount">0</strong> ផលិតផល</p>
+                        <input type="text" id="searchInput" placeholder="🔍 ស្វែងរកផលិតផល...">
+                    </div>
+                    <div class="products-grid" id="productsGrid"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3><i class="fas fa-book-open"></i> KhmerStationery</h3>
+                <p>ហាងលក់គ្រឿងសម្ភារៈសិក្សាឈានមុខគេនៅកម្ពុជា</p>
+            </div>
+            <div>
+                <h4>តំណភ្ជាប់</h4>
+                <a href="index.html">ទំព័រដើម</a>
+                <a href="products.html">ផលិតផល</a>
+                <a href="about.html">អំពីយើង</a>
+                <a href="contact.html">ទំនាក់ទំនង</a>
+            </div>
+            <div>
+                <h4>ជំនួយ</h4>
+                <a href="#">របៀបទិញ</a>
+                <a href="#">ការដឹកជញ្ជូន</a>
+                <a href="#">សំណួរញឹកញាប់</a>
+            </div>
+            <div>
+                <h4>ទំនាក់ទំនង</h4>
+                <p><i class="fas fa-phone"></i> 012 345 678</p>
+                <p><i class="fas fa-envelope"></i> info@stationery.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 KhmerStationery. រក្សាសិទ្ធិទាំងអស់។</p>
+        </div>
+    </footer>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> កន្ត្រក</h3>
+            <button id="closeCart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="cart-empty">កន្ត្រករបស់អ្នកទទេ</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>សរុប៖</span>
+                <strong id="cartTotal">$0.00</strong>
+            </div>
+            <button class="btn btn-primary btn-block">បង់ប្រាក់</button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
